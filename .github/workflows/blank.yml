@@ -17,6 +17,6 @@ jobs:
     steps:
       - name: Run experiments
         run: |
-          ls
+          cd ..
           source pippo.sh
         shell: bash
