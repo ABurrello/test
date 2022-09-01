@@ -17,5 +17,6 @@ jobs:
     steps:
       - name: Run experiments
         run: |
+          pwd
           source pippo.sh
         shell: bash
