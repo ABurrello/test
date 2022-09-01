@@ -1,0 +1,19 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+      
+  tests:
+
+    runs-on: ubuntu-bionic
+    container:
+        image: ubuntu:bionic
+    steps:
+      - name: Run experiments
+        run: |
+          source pippo.sh
