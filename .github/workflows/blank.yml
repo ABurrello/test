@@ -10,7 +10,7 @@ jobs:
       
   tests:
 
-    runs-on: ubuntu-bionic
+    runs-on: self-hosted
     container:
         image: ubuntu:bionic
     steps:
