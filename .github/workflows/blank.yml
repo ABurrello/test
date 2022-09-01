@@ -13,6 +13,7 @@ jobs:
     runs-on: self-hosted
     container:
         image: ubuntu:bionic
+        options: "--entrypoint /bin/bash"
     steps:
       - name: Run experiments
         run: |
